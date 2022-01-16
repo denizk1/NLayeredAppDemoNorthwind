@@ -1,0 +1,30 @@
+Katmanlarýn olusturulmasý
+	-Business
+		-Abstract
+		-Concrete
+		Klasorlari olusturulur
+	-DataAccess
+		-Abstract
+		-Concrete 
+		Klasorlari olusturulur
+	-Entitites->yardýmcý katman
+		-Abstract
+		-Concrete 
+		Klasorlari olusturulur
+	-WebFormsUI 
+
+-Abstract->soyut nesneler yer alýr.base class,interface,abstract class
+-Concrete->somut nesnelerin yazýldýgý yer
+
+-Entitites katmanýnda concrate klasorunde de product vb.. tabloya karsýlýk gelen sýnýflar olusturulur.Ardýndan Abstract klasorunde bos bir IEntity interface olusturulur
+-Data Access katmanlarýna, program geliþebileceði ve baþka ORMler ile yapýlabileceði için þuan yapýlacak ORM in klasoru açýlýr ve concrerede istenilen sýnýfýn DAL sýnýfý acýlýr ve databesin contexti olusturulur.
+-Data Access katmanýnda concrete de Dal sýnýfýný olusturduk fakat bir cok tablo icin bunun aynýsýný yapacaðýz bu yüzden Abstract klasorunde bir repository interface olusturulur ve IproductDAL(Direk bir nesneyi newleyemeyiz. Solid prensiplerine aykrý oldugu icin IprocudtDAl interface bu yüzden  vardýr. ve eger baska bir metot yazýlma ihtimali varsa Iproduct dal a yazýlýr)
+Sýnýfýna ve Iprocutdal efprocutdal sýnýfýna implement edilir
+-Entities katmaný dataaccess katmanýna referans edilir.
+-Business katmanýna geçilir.DataAccess ve Entitiden referans alýr çükü entitideki nesneyi ve dataaccessdeki DAL nesnelerini iþleyecektir.
+-Business Concrete klasorunde productmanager olusturulur yapýlacak iþler manager olarak nitelendiririlir. Business katmanýnda if else,kontrol gibi þeyler yazýlýr.
+-Productmanager kodlanýr.Abstract klasorunde IProductservice oluýsturulur çünkü biz UI de çaðýrýrken product manageri çaðarýcaðýz ve solid prensiplerine göre
+hiç bir class newlenemez bu yüzden IProductservice interface i olusturuyoruz ve UI de onu çaðarýcaðýz.
+-UI yi setup project diyip IProductservice ve IProductDalý çaðýrýp servise ekliyoruz.
+-Kodun çalþýþtýðý yer UI Olduðu için connection stringi oraya yazýyoruz app confige.
+-Entity Framework için repository implementasyonu yapýlýr. çünkü her seferinde parametrelere product ve context veriyoruz bunuu genelleþtiriyoruz.
