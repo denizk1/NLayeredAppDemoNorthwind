@@ -1,0 +1,6 @@
+C:\Users\deniz.kaparlar\Desktop\C#EnginDemirkol\tekrar-Project2\NLayeredAppDemoNorthwind\Entities\bin\Debug\Entities.dll
+C:\Users\deniz.kaparlar\Desktop\C#EnginDemirkol\tekrar-Project2\NLayeredAppDemoNorthwind\Entities\bin\Debug\Entities.pdb
+C:\Users\deniz.kaparlar\Desktop\C#EnginDemirkol\tekrar-Project2\NLayeredAppDemoNorthwind\Entities\obj\Debug\Entities.csproj.AssemblyReference.cache
+C:\Users\deniz.kaparlar\Desktop\C#EnginDemirkol\tekrar-Project2\NLayeredAppDemoNorthwind\Entities\obj\Debug\Entities.csproj.CoreCompileInputs.cache
+C:\Users\deniz.kaparlar\Desktop\C#EnginDemirkol\tekrar-Project2\NLayeredAppDemoNorthwind\Entities\obj\Debug\Entities.dll
+C:\Users\deniz.kaparlar\Desktop\C#EnginDemirkol\tekrar-Project2\NLayeredAppDemoNorthwind\Entities\obj\Debug\Entities.pdb
